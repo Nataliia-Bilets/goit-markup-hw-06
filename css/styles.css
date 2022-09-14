@@ -638,7 +638,7 @@ ul {
    transform: translate(-50%, -50%);
    width: 528px;
    height: 581px;
-   padding: 40px 40px;
+   padding: 40px;
    background-color: var(--primary-bgc);
    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
    border-radius: 4px;
@@ -674,7 +674,8 @@ ul {
    display: flex;
    flex-direction: column;
 }
-.modal-form-field {
+
+.modal-form-field:not(:last-child) {
    margin-bottom: 10px;
 }
 .modal-field-name {
@@ -753,8 +754,9 @@ ul {
 .modal-form-check-field {
    display: flex;
    align-items: center;
+   justify-content: center;
    margin-bottom: 30px;
-   margin-top: 20px;
+   margin-top: 10px;
    font-weight: 400;
    line-height: 2;
    color: var(--secondary-text-color);
@@ -774,7 +776,7 @@ ul {
    color: var(--accente-text-color);
 }
 .modal-form-submit {
-   padding: 10px 32px;
+   padding: 10px 52px;
    font-weight: 700;
    font-size: 16px;
    line-height: 1.88;
